@@ -1,8 +1,8 @@
 
 fun main() {
-    val borojaPhoneBook = PhoneBook()
-
-    borojaPhoneBook.storeContact(
+    val johnPhoneBook = PhoneBook()
+    // Storing list of contacts in johnPhoneBook
+    johnPhoneBook.storeContact(
         Contact(
             "Donnarumma",
             "Gianluigi",
@@ -11,7 +11,7 @@ fun main() {
         )
     )
 
-    borojaPhoneBook.storeContact(
+    johnPhoneBook.storeContact(
         Contact(
             "Boroja",
             "Chinex",
@@ -20,15 +20,15 @@ fun main() {
         )
     )
     //To test duplicates, uncomment
-    borojaPhoneBook.storeContact(
+    /** borojaPhoneBook.storeContact(
         Contact(
             "Alex",
             "Telles",
             "donnagian@gmail.com",
             "08034753241"
         )
-    )
-    println(borojaPhoneBook.getContact("08123445869"))
+    ) */
+    println("Contact details:  ${johnPhoneBook.getContact("08123445869")}")
     println()
-    println(borojaPhoneBook.contactList)
+    println("List of contacts: ${johnPhoneBook.contactList}")
 }
